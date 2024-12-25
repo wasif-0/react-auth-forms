@@ -1,0 +1,166 @@
+.container {
+    background-color: lightblue;
+    width: 80%;
+    height: 90vh;
+    border: 2px solid darkblue;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  .leftInfo {
+    padding: 30px;
+    width: 50%;
+  }
+  
+  .leftInfo > h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .leftInfo > p {
+    margin-bottom: 1.5rem;
+    color: rgb(87, 86, 86);
+  }
+  
+  .leftInfo > form > label {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    color: #333;
+  }
+  
+  .leftInfo > form > input {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid #ccc;
+    margin-bottom: 1.2rem;
+    width: 90%;
+  }
+  
+  .checkbox {
+    font-size: 0.9rem;
+    color: #333;
+    padding: 0.8rem;
+  }
+  
+  .leftInfo >form > button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 30px;
+    background-color: darkblue;
+    color: white;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .leftInfo>form  > button:hover {
+    background-color: #0056b3;
+  }
+  
+  .rightImg > img {
+    margin-right: -3rem;
+    width:  100vh;
+  }
+  /* Responsive Design for Mobile Sizes */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .leftInfo {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .leftInfo > h1 {
+    font-size: 1.6rem;
+  }
+
+  .leftInfo > p {
+    font-size: 0.9rem;
+  }
+
+  .leftInfo > form > input {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  .leftInfo > form > button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .rightImg > img {
+    max-height: 200px;
+  }
+}
+
+/* Mobile Sizes */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .leftInfo > h1 {
+    font-size: 1.6rem;
+  }
+
+  .leftInfo > p {
+    font-size: 0.85rem;
+  }
+
+  .leftInfo > form > input {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .leftInfo > form > button {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+
+  .rightImg > img {
+    max-height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 8px;
+  }
+
+  .leftInfo > h1 {
+    font-size: 1.5rem;
+  }
+
+  .leftInfo > p {
+    font-size: 0.8rem;
+  }
+
+  .leftInfo > form > input {
+    font-size: 0.85rem;
+    padding: 8px 10px;
+  }
+
+  .leftInfo > form > button {
+    font-size: 0.95rem;
+    padding: 8px 15px;
+  }
+
+  .rightImg > img {
+    max-height: 150px;
+  }
+}
